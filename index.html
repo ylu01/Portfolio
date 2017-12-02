@@ -1,131 +1,154 @@
 <!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
 
 <html>
 <head>
     <meta charset="utf-8" />
-    <title>Yang Lu, Junior Frontend developer</title>
+    <title>Yang Lu</title>
     <link href="css.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+     
 </head>
 <body>
-    <header id="topHeader">
-        <hgroup>
-            <h1 id="topWordFormat">Yang Lu<br> Junior Front End Developer</h1>
-        </hgroup>
-    </header>
-    <nav id="navigation">
-			<a href="#aboutTag" class="navText">About</a>
-			<a href="#projectsTag" class="navText">Projects</a>
-                        <a href="#footerNote" class="navText">Contact</a>
-    </nav>
-    <section style="padding:5px">
-        <article id="contactCard">
-            <header id="aboutTag">
-                <h1>About</h1>
-            </header>
-            <section id="idcard">
-                <article id="bio"><p>I am Yang. I write code, do frontend, and make fun things that is for actual use or a cheap laugh. I am finished school and wants to keep pursuing wiriting code and related thingsI like food and puzzles and games and of course, coding.</p></article>
-                <div class="container">
-                    <figure><img src="portrait.jpg" id="pic"></figure>
-                    <div class="overlay">
-                    <div class="text">Hi There</div>
-                    </div>
-                </div>
-                
-            </section>
-					
-        </article>
-    </section>
-    
-    <section>
-        <article id="projectSection">
-            <header id="projectsTag">
-                <h1>Projects and portfolio</h1>
-            </header>
-            <section>
-                <ul id="projects" class="projectsContainer">
-                    <!-- First project item. -->
-                    <li class="projectItem projectItemContainer">
-                        <a href="https://ylu01.github.io/Trump-Translator/" class="projectItem">
-                        <img src="trump.jpg">
-                        <div class="projectItemOverlay">
-                            <div class="text">Javascript based Translator that translates your phrases to "China".</div>
-                        </div>
-                        </a>
-                    </li>
-                    
-                     <!-- Second project item. -->
-                    <li class="projectItem projectItemContainer">
-                        <a href="https://ylu01.github.io/GridGame/" class="projectItem">
-                        <img src="gridgame.jpg">
-                        <div class="projectItemOverlay">
-                            <div class="text">Javascript based grid game</div>
-                        </div>
-                        </a>
-                    </li>
-                    
-                    <!-- Third project item. -->
-                    <li class="projectItem projectItemContainer">
-                        <a href="https://ylu01.github.io/CardFlipper/" class="projectItem">
-                        <img src="flipper.jpg">
-                        <div class="projectItemOverlay">
-                            <div class="text">Javascript, Jquery, and CSS based memory flip card game. </div>
-                        </div>
-                        </a>
-                    </li>
-                    
-                    <!-- Fourth project item. -->
-                    <li class="projectItem projectItemContainer">
-                        <a href="https://ylu01.github.io/Weather/" class="projectItem">
-                        <img src="weather.jpg">
-                        <div class="projectItemOverlay">
-                            <div class="text">API based app that displays weather in your area by your IP </div>
-                        </div>
-                        </a>
-                    </li>
-                    
-                    <!-- Fifth project item. -->
-                    <li class="projectItem projectItemContainer">
-                        <a href="https://ylu01.github.io/Calculator/" class="projectItem">
-                        <img src="calculator.jpg">
-                        <div class="projectItemOverlay">
-                            <div class="text">Javascript based calculator. With a bonus of Trig functions! </div>
-                        </div>
-                        </a>
-                    </li>
-                    
-                    <!-- Sixth project item. -->
-                    <li class="projectItem projectItemContainer">
-                        <a href="https://ylu01.github.io/StopwatchTimer/" class="projectItem">
-                        <img src="timer.jpg">
-                        <div class="projectItemOverlay">
-                            <div class="text">Javascript based Timer and stopwatch app. </div>
-                        </div>
-                        </a>
-                    </li>
-                    
-                </ul>
-            </section>
-					
-        </article>
-    </section>
-    
-    
-    
-    <footer class="footer" id="footerNote" style="text-align:center"><p class="sectionTitle">Contact</p>
-        <ul id="contactPanel" class="projectsContainer">
-            <li class="contactItem" id="contactLeftPanel">If you would like to contact me, whether be it that you are interested in my works and projects, or hit me up for coffee or a meal somewhere in Toronto, feel free to drop me a message..</li>
-            <li class="contactItem" id="contactRightPanel">
-                <p class="contactText"> Contact Info </p>
-                <address id="contactMe">
-                    <a href="mailto:iamyangandirule@gmail.com"><p id="mailToLink"> Contact me through email</p></a>
-                </address>
-            </li>
-            
-            
-            
-            
-        </ul>
+   
+    <div class="loadingScreen" id="loadingScreen"> ???
+        <div id="loadingContent"> LOADING<br><br></div>
         
-    </footer>
+    </div>
+    <script src="loadingScreen.js">
+    </script>
+    <div class="headerContainer">
+        <div class="container">
+        <header class="header clearfix">
+            <div id="titleBox">
+                <h1 class="title">Yang Lu</h1>
+                <h1 class="title"> Junior Front end developer </h1>
+            </div>
+           
+                <nav class="navBar">
+                    <ul>
+                        <li class="active"><a data-toggle="tab" href="#home">About</a></li>
+                        <li><a data-toggle="tab" href="#projects">Projects</a></li>
+                        <li><a data-toggle="tab" href="#menu2">Contact</a></li>
+                        <li><a data-toggle="tab" href="#menu3">Menu 3</a></li>
+                    </ul>
+                </nav>
+        </header>
+        
+        
+        </div>
+    </div>
+   <div class="tab-content main clearfix">
+    <div id="home" class="tab-pane fade in active introPage clearfix">
+        <h3>Hello, I am Yang. </h3>
+     <article>
+                    <header>
+                        <h1>article header h1</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec.</p>
+                    </header>
+                    <section>
+                        <h2>article section h2</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec. Curabitur posuere enim eget turpis feugiat tempor. Etiam ullamcorper lorem dapibus velit suscipit ultrices. Proin in est sed erat facilisis pharetra.</p>
+                    </section>
+                    <section>
+                        <h2>article section h2</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec. Curabitur posuere enim eget turpis feugiat tempor. Etiam ullamcorper lorem dapibus velit suscipit ultrices. Proin in est sed erat facilisis pharetra.</p>
+                    </section>
+                    <footer>
+                        <h3>article footer h3</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec. Curabitur posuere enim eget turpis feugiat tempor.</p>
+                    </footer>
+                </article>
+
+        <aside class="portraitFrame">
+            <img src="portrait.jpg" alt="me" id="myPortrait">
+             <div class="overlay">
+                <div class="text">Hi There</div>
+             </div>
+        </aside>
+    
+    </div>
+       
+       
+       
+    <div id="projects" class="tab-pane fade clearfix projectsPage">
+      <h3>Works and Projects</h3>
+      
+      
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+            <ol class="carousel-indicators">
+              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+              <li data-target="#myCarousel" data-slide-to="1"></li>
+              <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+
+      <div class="item active">
+            <img src="img1.jpg" alt="WeatherApp" class="caroselimage">
+            <div class="carousel-caption">
+                <section id="textBox">
+                    <h3>Weather</h3>
+                    <p class="caroselText">Uses the OpenWeatherAPI api to show weather in your current area. </p>
+                    <a href="http://ylu01.github.io/Weather">Check the project out here</a>
+                </section>
+              
+            </div>
+      </div>
+
+          <div class="item">
+            <img src="img2.jpg" alt="Chicago" class="caroselimage">
+            <div class="carousel-caption">
+                <section id="textBox">
+                    <h3>Grid Game</h3>
+                    <p class="caroselText">Vanilla javascript based game to navigate around the dungeon, and collect treasure. </p>
+                    <a href="http://ylu01.github.io/GridGame">Check out the project here</a>
+                </section>
+            </div>
+          </div>
+
+          <div class="item">
+            <img src="img3.jpg" alt="New York" class="caroselimage">
+            <div class="carousel-caption">
+                <section id="textBox">
+                    <h3>Donald Trump China Translator</h3>
+                    <p class="caroselText">Novelty app made to translate any phrase into "China".</p>
+                    <a href="http://ylu01.github.io/Trump-Translator">Check out the project here</a>
+                </section>
+            </div>
+          </div>
+  
+        </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+	    </div>
+      
+    </div>
+    <div id="menu2" class="tab-pane fade">
+      <h3>Menu 2</h3>
+      <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+    </div>
+    <div id="menu3" class="tab-pane fade">
+      <h3>Menu 3</h3>
+      <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+    </div>
+  </div>
+    <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
 </body>
 </html>
