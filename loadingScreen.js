@@ -26,7 +26,7 @@ function text1(){
     para.appendChild(node);
     var element = document.getElementById("loadingContent");
     element.appendChild(para);
-    rand = Math.floor(500 + Math.random() * 2500);
+    rand = Math.floor(500 + Math.random() * 2000);
     setTimeout(text2, rand);
 }
 
@@ -39,7 +39,7 @@ function text2(){
     para.appendChild(node);
     var element = document.getElementById("loadingContent");
     element.appendChild(para);
-    rand = Math.floor(500 + Math.random() * 2500);
+    rand = Math.floor(500 + Math.random() * 2000);
     setTimeout(text3, rand );
 
 }
@@ -53,7 +53,7 @@ function text3(){
     para.appendChild(node);
     var element = document.getElementById("loadingContent");
     element.appendChild(para);
-    rand = Math.floor(500 + Math.random() * 2500);
+    rand = Math.floor(500 + Math.random() * 2000);
     setTimeout(text4, rand );
 
 }
@@ -66,7 +66,7 @@ function text4(){
     para.appendChild(node);
     var element = document.getElementById("loadingContent");
     element.appendChild(para);
-    rand = Math.floor(500 + Math.random() * 2500);
+    rand = Math.floor(500 + Math.random() * 2000);
     setTimeout(text5, rand );
 
 }
@@ -79,7 +79,7 @@ function text5(){
     para.appendChild(node);
     var element = document.getElementById("loadingContent");
     element.appendChild(para);
-    rand = Math.floor(500 + Math.random() * 2500);
+    rand = Math.floor(500 + Math.random() * 2000);
     setTimeout(text6, rand );
 
 }
@@ -92,7 +92,7 @@ function text6(){
     para.appendChild(node);
     var element = document.getElementById("loadingContent");
     element.appendChild(para);
-    rand = Math.floor(500 + Math.random() * 2500);
+    rand = Math.floor(500 + Math.random() * 2000);
     setTimeout(text7, rand );
 
 }
@@ -105,7 +105,7 @@ function text7(){
     para.appendChild(node);
     var element = document.getElementById("loadingContent");
     element.appendChild(para);
-    rand = Math.floor(500 + Math.random() * 2500);
+    rand = Math.floor(500 + Math.random() * 2000);
     setTimeout(text8, rand );
 
 }
