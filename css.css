@@ -62,7 +62,9 @@ html {
   -ms-text-size-adjust: 100%; /* 2 */
   -webkit-text-size-adjust: 100%; /* 2 */
 }
-
+body{
+    background:url('bg.jpg');
+}
 
 /*
 
@@ -120,6 +122,7 @@ html {
     background: -moz-linear-gradient(top, #FFFFFF, #5AA1EB);
     background: -ms-linear-gradient(top, #FFFFFF, #5AA1EB);
     background: -o-linear-gradient(top, #FFFFFF, #5AA1EB);
+
 }
 
 .header{
@@ -193,8 +196,7 @@ nav a:hover {
 }
 aside{
     float:right;
-    width:30%;
-    margin-right:100px;
+    width:25%;
     margin-top:50px;
 }
 
@@ -258,6 +260,22 @@ aside{
 }
 /********************** RESPONSIVE STUFF *************************/
 
+
+@media only screen and (max-width: 480px){
+    aside{
+        margin-left:90px;
+    }
+    
+    #textBox{
+        margin-top:50px;
+    }
+    .carousel-caption{
+        position:relative !important;; 
+        margin-top:-50px !important;;
+        left:0 !important;
+        right:0 !important;;
+    }
+}
 @media only screen and (min-width: 480px) {
 
 /* ====================
@@ -277,6 +295,7 @@ aside{
     .title{
         font-size:100%;
     }
+    
     
 /* ========================
     INTERMEDIATE: IE Fixes
@@ -321,6 +340,7 @@ aside{
 
     .main aside {
         float: right;
+        width:28%;
     }
 }
 
