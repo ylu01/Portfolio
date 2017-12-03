@@ -83,11 +83,12 @@ body{
     width:5000px;
     height:5000px;
     z-index:100;
-    background-color:black;
+    background-color:green;
 }
 
 #loadingContent{
     position:absolute;
+    float:left;
     height:300px;
     width:500px;
     z-index:101;
@@ -98,6 +99,16 @@ body{
     font-size:250%;
     line-height:70%;
     font-family: "Trebuchet MS";
+}
+
+.loadingIcon{
+    width:100px;
+    margin-right:200px;
+    animation: rotate 10s linear infinite;
+}
+@keyframes rotate {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
 }
 .title{
     position:relative;
