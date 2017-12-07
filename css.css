@@ -83,14 +83,14 @@ body{
     width:5000px;
     height:5000px;
     z-index:100;
-    background-color:green;
+    background-color:black;
 }
 
 #loadingContent{
     position:absolute;
     float:left;
     height:300px;
-    width:500px;
+    width:350px;
     z-index:101;
     margin-left:500px;
     margin-top:200px;
@@ -102,9 +102,15 @@ body{
 }
 
 .loadingIcon{
+    z-index:-1;
+    position:relative;
     width:100px;
-    margin-right:200px;
     animation: rotate 10s linear infinite;
+}
+.pbar{
+    position:absolute;
+    height:20px !important;
+    margin-top:200px;
 }
 @keyframes rotate {
   from { transform: rotate(0deg); }
