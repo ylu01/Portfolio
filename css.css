@@ -206,7 +206,7 @@ nav a:hover {
 /**************   TAB CONTENTS **********************/
 
 /*portrait, intro and "hi there" */
-.introPage ,.projectsPage,.contactPage{
+.introPage ,.projectsPage ,.contactPage{
     margin:auto;
     width:70%;
     padding-top:0;
